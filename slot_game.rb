@@ -28,7 +28,7 @@ end
 # スロットの画面において、横 もしくは 斜め に数字が揃っているような列の数を集計して返す。
 def count_aligned_row_number_of_reels (reels)
   total_aligned_number = 0
-  row_number_minus_1 = 0
+  row_number_minus_1   = 0
 
   # 1行ずつ数字が横1行に揃っているかチェックし、揃っている行数を集計。
   3.times do
@@ -92,8 +92,8 @@ while continue_game == true
 
       # 揃った列が１列でもあった場合
       unless total_aligned_number == 0
-        earned_point = total_aligned_number * 500
-        earned_coin = total_aligned_number * 100
+        earned_point  =  total_aligned_number * 500
+        earned_coin   =  total_aligned_number * 100
         current_point += earned_point
         residual_coin += earned_coin
         puts "#{total_aligned_number}列揃いました！"
